@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@keyframes animateProgress{
+    0%{
+        width:0%;
+    }
+}
+.bot-home{
+    background: rgb(21,43,82);
+    background: rgb(21,43,82);
+    background: linear-gradient(355deg, rgba(21,43,82,1) 13%, rgba(69,139,229,1) 67%);
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.bot-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    list-style: none;
+}
+.bot-menu li{
+    background-color: #14498f;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: white;
+    font-weight: 900;
+    transform: skew(-10deg);
+
+}
+
+.bot-menu li:hover{
+    box-shadow: -5px 5px 0 white;
+}
+.bot-menu-active{
+    box-shadow: -5px 5px 0 white;
+    color: white;
+}
+.singleBot{
+    height: 300px;
+    width: 200px;
+    position: relative;
+    margin: 10px;
+    background-color: rgba(255, 0, 0, 0.603);
+    border: 5px solid red;
+    border-radius: 10px;
+}
+.singleBot img
+{
+    width: 200px;
+    height: 300px;
+}
+.singleBot:hover{
+    background-color: orange;
+    transition: .5s;
+}
+.bot-details{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    height: 40px;
+    color: white;
+    width: 100%;
+    
+}
+.bot-collection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.status{
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    background-color: red;
+    padding: 10px;
+    border: 3px solid white;
+    color: white;
+    transform: skew(-20deg);
+}
+.botModal{
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
+    height: 70vh;
+    width: 90vw;
+    background-color: #14498f;
+    border-radius: 10px;
+}
+.bot-props{
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+    padding-bottom: 10px;
+    height: fit-content;
+}
+.bot-props h2{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+.bot-props h4{
+    padding: 5px;
+}
+.singleProp{
+    display: flex;
+    margin: 10px;
+}
+.singleProp>div{
+    width: 200px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 5px;
+}
+.singleProp .propProgress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    background-color: red;
+    border-radius: 20px;
+    animation-name: animateProgress;
+    animation-duration: 1s;
+}
+.botModal{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.botModal img{
+    height: 50vh;
+}
+.buttons{
+    position: fixed;
+    bottom: 20vh;
+}
+.buttons button{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+@media screen and (max-width:670px){
+.bot-menu li{
+    font-size: 13px;
+    padding: 10px;
+}
+.bot-menu{
+    padding: 15px 5px;
+}
+.singleBot{
+    width: 90%;
+}
+.botModal{
+    flex-direction: column-reverse;
+}
+.botModal img{
+    height: 40vh;
+}
+
+.bot-props{
+    width: 95%;
+}
+.buttons{
+    top: 10vh;
+}
+
+}
